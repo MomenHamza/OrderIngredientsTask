@@ -2,7 +2,7 @@
 
 $data = json_decode(file_get_contents("php://input"));
 
-if($data){    
+if($data && isset($data->products)){    
     
     include_once 'config/Database.php';
     include_once 'models/Order.php';
